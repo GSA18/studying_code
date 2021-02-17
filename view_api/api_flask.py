@@ -14,7 +14,7 @@ api.add_resource(Product_petResource, '/product_pet', endpoint='product_pet')
 
 @app.route('/')
 def main():
-    return 'Ta funcionando'
+    return 'Ta funcionando corretamente'
 
 
 app.run(debug=True)
