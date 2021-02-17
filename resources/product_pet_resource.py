@@ -21,3 +21,15 @@ class Product_petResource(BaseResource):
     @marshal_with(fields)
     def post(self):
         return super().post()
+
+    @marshal_with(fields)
+    def get(self,id=None):
+        return super().get(id)
+
+    @marshal_with(fields)
+    def put (self,id:int):
+        return super().put(id)
+    
+    @marshal_with(fields)
+    def delete(self, id:int):
+        return super().delete(id)
